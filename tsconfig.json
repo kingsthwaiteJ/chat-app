@@ -1,0 +1,51 @@
+{
+    "lintOptions": {
+      "rules": {
+        "interface_name_prefix": false
+      }
+    },
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "strict": true,
+      "jsx": "preserve",
+      "importHelpers": false,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "strictNullChecks": false,
+      "noImplicitAny": false,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "types": [],
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ],
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+, "src/socket-types.d.ts", "src/socket-client.ts", "src/index.ts"    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "ts-node": {
+      // these options are overrides used only by ts-node
+      // same as the --compilerOptions flag and the TS_NODE_COMPILER_OPTIONS environment variable
+      "compilerOptions": {
+        "module": "commonjs"
+      }
+    },
+  }
+  

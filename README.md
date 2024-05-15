@@ -60,7 +60,7 @@ and using Redis for storage.
 
 ### Built With
 
-* [![Javascript][Javascript.com]][Javascript-url]
+* [![Typescript][Typescript.com]][Typescript-url]
 * [![Socket.io][Socket.io]][Socket.io-url]
 * [![Express][Express.com]][Express-url]
 
@@ -106,7 +106,7 @@ You can then browse through the content using the embedded JSON viewer, or copy 
 <!-- ROADMAP -->
 ## Roadmap
 
-- Migrate to Typescript
+- Migrate to Typescript ✅
 - Add test framework + implement tests
 - Implement React + UI improvements
 - Implement Redis for persistent storage (sqlite as a backup)
@@ -175,8 +175,8 @@ Thank you to the following package owners:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kingsthwaiteJ
 [product-screenshot]: https://raw.githubusercontent.com/kingsthwaiteJ/chat-app/main/public/images/jsonld-viewer-screenshot.PNG
-[Javascript.com]: https://img.shields.io/badge/Javascript-FCDC00?style=for-the-badge&logo=javascript&logoColor=black
-[Javascript-url]: https://www.javascript.com/
+[Typescript.com]: https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript-url]: https://typescriptlang.com
 [Socket.io]: https://img.shields.io/badge/Socket.io-25C2A0?style=for-the-badge&logo=socket.io&logoColor=white
 [Socket.io-url]: https://socket.io
 [Express.com]: https://img.shields.io/badge/ExpressJS-EEEEEE?style=for-the-badge&logo=express&logoColor=black

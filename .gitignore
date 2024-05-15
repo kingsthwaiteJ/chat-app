@@ -12,3 +12,8 @@ package-lock.json
 # built files
 dist
 *.zip
+*.js
+*.js.map
+
+# files generated at run-time (not required to be stored in the repo)
+chat.db
