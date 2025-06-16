@@ -5,7 +5,7 @@
   <h3 align="center">Chat Application</h3>
 
   <p align="center">
-    A simple client-server chat application built on React, Redis and Socket.io.
+    A simple client-server chat application built on React, Sqlite and Socket.io.
     <br />
     <a href="https://github.com/kingsthwaiteJ/chat-app/issues">Report Bug</a>
     ·
@@ -52,7 +52,7 @@ and from a user experience standpoint.
 
 Additionally, I've always wanted to build an SPA using React, and haven't had
 the chance to until now, so this is my first attempt at building a React app
-and using Redis for storage.
+and using Sqlite for storage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,9 +107,8 @@ You can then browse through the content using the embedded JSON viewer, or copy 
 ## Roadmap
 
 - Migrate to Typescript ✅
-- Add test framework + implement tests
 - Implement React + UI improvements
-- Implement Redis for persistent storage (sqlite as a backup)
+- Add test framework + implement tests
 - Add the ability to engage in multiple chat rooms concurrently
 - Implement direct message functionality with another user
 

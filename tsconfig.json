@@ -36,7 +36,7 @@
     "include": [
       "src/**/*.ts",
       "src/**/*.tsx"
-, "src/socket-types.d.ts", "src/socket-client.ts", "src/index.ts"    ],
+, "src/back-end/socket-types.d.ts", "src/back-end/socket-client.ts", "src/back-end/index.ts", "src/back-end/database.ts"    ],
     "exclude": [
       "node_modules"
     ],

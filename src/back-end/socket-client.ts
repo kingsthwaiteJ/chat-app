@@ -1,6 +1,6 @@
 // TODO: 'io' here is imported using the /socket.io/socket.io.js import in index.html, sort out this type error
 // Initialize the socket
-const socket = io({
+const clientSocket = io({
     auth: {
         serverOffset: 0
     },
@@ -21,17 +21,17 @@ form.addEventListener('submit', (e) => {
     if (input.value) {
         // compute a unique offset
         console.log('Sending new message.');
-        const clientOffset = `${socket.id}-${counter++}`;
-        socket.emit('message', input.value, clientOffset);
+        const clientOffset = `${clientSocket.id}-${counter++}`;
+        clientSocket.emit('message', input.value, clientOffset);
         input.value = '';
     }
 });
 
-socket.on('message', (msg, serverOffset) => {
+clientSocket.on('message', (msg, serverOffset) => {
     const item = document.createElement('li');
     item.textContent = msg;
     messages.appendChild(item);
     window.scrollTo(0, document.body.scrollHeight);
-    socket.auth.serverOffset = serverOffset;
+    clientSocket.auth.serverOffset = serverOffset;
     console.log('Message received!');
 });

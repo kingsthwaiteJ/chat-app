@@ -1,12 +1,15 @@
 {
   "name": "chat-app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
     "@socket.io/cluster-adapter": "^0.2.2",
     "@types/node": "^20.12.12",
     "@types/socket.io": "^3.0.2",
     "@types/socket.io-client": "^3.0.0",
     "express": "^4.19.2",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
     "sqlite": "^5.1.1",
@@ -14,10 +17,17 @@
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "tsc": "tsc --watch",
-    "dev": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec \"ts-node src/index.ts\""
+    "tsc": "tsc ./back-end/socket-client.ts --watch",
+    "dev": "concurrently --kill-others \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "nodemon --watch 'src/back-end/**' --ext 'ts,json' --ignore 'src/back-end/**/*.spec.ts' --exec \"ts-node src/back-end/index.ts\"",
+    "dev:client": "next dev",
+    "test": "jest"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@types/jest": "^29.5.12",
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2"
   }
 }
